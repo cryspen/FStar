@@ -7,7 +7,7 @@ jobs:
 
   build-linux:
 
-    runs-on: [self-hosted, linux, X64]
+    runs-on: ubuntu-latest
 
     steps:
     - name: Check out repo        
@@ -58,7 +58,7 @@ jobs:
 
     needs: build-linux
 
-    runs-on: [self-hosted, Windows, X64]
+    runs-on: windows-latest
 
     steps:
     - name: Check out repo        
